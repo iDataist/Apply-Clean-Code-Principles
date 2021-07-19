@@ -1,0 +1,95 @@
+2021-07-19 12:51:16,379 ############################################################
+2021-07-19 12:51:16,380 import data
+2021-07-19 12:51:16,432 inspect dataframe:         
+Attrition_Flag              Existing Customer
+Customer_Age                               45
+Gender                                      M
+Dependent_count                             3
+Education_Level                   High School
+Marital_Status                        Married
+Income_Category                   $60K - $80K
+Card_Category                            Blue
+Months_on_book                             39
+Total_Relationship_Count                    5
+Months_Inactive_12_mon                      1
+Contacts_Count_12_mon                       3
+Credit_Limit                          12691.0
+Total_Revolving_Bal                       777
+Avg_Open_To_Buy                       11914.0
+Total_Amt_Chng_Q4_Q1                    1.335
+Total_Trans_Amt                          1144
+Total_Trans_Ct                             42
+Total_Ct_Chng_Q4_Q1                     1.625
+Avg_Utilization_Ratio                   0.061
+Name: 0, dtype: object
+2021-07-19 12:51:16,432 generate EDA report: ./results/eda/eda.html
+2021-07-19 12:52:00,077 normalize numeric features: ['Customer_Age', 'Dependent_count', 'Months_on_book', 'Total_Relationship_Count', 'Months_Inactive_12_mon', 'Contacts_Count_12_mon', 'Credit_Limit', 'Total_Revolving_Bal', 'Avg_Open_To_Buy', 'Total_Amt_Chng_Q4_Q1', 'Total_Trans_Amt', 'Total_Trans_Ct', 'Total_Ct_Chng_Q4_Q1', 'Avg_Utilization_Ratio']
+2021-07-19 12:52:00,118 inspect dataframe:         
+Attrition_Flag              Existing Customer
+Customer_Age                        -0.165406
+Gender                                      M
+Dependent_count                      0.503368
+Education_Level                   High School
+Marital_Status                        Married
+Income_Category                   $60K - $80K
+Card_Category                            Blue
+Months_on_book                       0.384621
+Total_Relationship_Count             0.763943
+Months_Inactive_12_mon              -1.327136
+Contacts_Count_12_mon                0.492404
+Credit_Limit                         0.446622
+Total_Revolving_Bal                 -0.473422
+Avg_Open_To_Buy                      0.488971
+Total_Amt_Chng_Q4_Q1                 2.623494
+Total_Trans_Amt                     -0.959707
+Total_Trans_Ct                      -0.973895
+Total_Ct_Chng_Q4_Q1                  3.834003
+Avg_Utilization_Ratio               -0.775882
+Name: 0, dtype: object
+2021-07-19 12:52:00,118 one-hot-encode categorical features:['Gender', 'Education_Level', 'Marital_Status', 'Income_Category', 'Card_Category', 'Attrition_Flag']
+2021-07-19 12:52:00,138 inspect dataframe:         
+Customer_Age                       -0.165406
+Dependent_count                     0.503368
+Months_on_book                      0.384621
+Total_Relationship_Count            0.763943
+Months_Inactive_12_mon             -1.327136
+Contacts_Count_12_mon               0.492404
+Credit_Limit                        0.446622
+Total_Revolving_Bal                -0.473422
+Avg_Open_To_Buy                     0.488971
+Total_Amt_Chng_Q4_Q1                2.623494
+Total_Trans_Amt                    -0.959707
+Total_Trans_Ct                     -0.973895
+Total_Ct_Chng_Q4_Q1                 3.834003
+Avg_Utilization_Ratio              -0.775882
+Gender_M                            1.000000
+Education_Level_Doctorate           0.000000
+Education_Level_Graduate            0.000000
+Education_Level_High School         1.000000
+Education_Level_Post-Graduate       0.000000
+Education_Level_Uneducated          0.000000
+Education_Level_Unknown             0.000000
+Marital_Status_Married              1.000000
+Marital_Status_Single               0.000000
+Marital_Status_Unknown              0.000000
+Income_Category_$40K - $60K         0.000000
+Income_Category_$60K - $80K         1.000000
+Income_Category_$80K - $120K        0.000000
+Income_Category_Less than $40K      0.000000
+Income_Category_Unknown             0.000000
+Card_Category_Gold                  0.000000
+Card_Category_Platinum              0.000000
+Card_Category_Silver                0.000000
+Attrition_Flag_Existing Customer    1.000000
+Name: 0, dtype: float64
+2021-07-19 12:52:00,138 perform train test split with the test size of 0.3
+2021-07-19 12:52:00,145 start training
+2021-07-19 12:52:33,391 save models in ./models/rfc_model.pkl, store results in ./results/images/
+2021-07-19 12:55:38,062 ############################################################
+2021-07-19 12:55:38,062 start tests
+2021-07-19 12:55:38,783 Testing import_data: SUCCESS
+2021-07-19 12:56:17,118 Testing perform_eda: SUCCESS
+2021-07-19 12:56:17,152 Testing scaler: SUCCESS
+2021-07-19 12:56:17,172 Testing encoder: SUCCESS
+2021-07-19 12:56:17,183 Testing perform_train_test_split: SUCCESS
+2021-07-19 12:56:46,860 Testing train_models: SUCCESS
