@@ -1,0 +1,6 @@
+pandas_profiling==3.0.0
+matplotlib==3.3.4
+joblib==1.0.1
+pandas==1.2.3
+numpy==1.21.0
+scikit_learn==0.24.2
