@@ -9,5 +9,5 @@ In this project, I applied the clean code principles (modular, documented, and t
 - To lint a python script, type `black --line-length 79 PATH_TO_FILE` and `flake8 PATH_TO_FILE` in cli.
 - To run the machine learning pipeline, type `python churn_library.py` in cli.
 - To run the tests, type `python test_churn_library.py` in cli.
-- To view the logs, type `cat logs/churn_library.log`
+- To view the logs, type `cat logs/churn_library.log` in cli. 
 
