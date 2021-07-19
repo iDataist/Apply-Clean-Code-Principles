@@ -1,12 +1,13 @@
 # Predict Customer Churn
 
-- Project **Predict Customer Churn** of ML DevOps Engineer Nanodegree Udacity
-
 ## Project Description
-Your project description here.
+In this project, I applied the clean code principles (modular, documented, and tested) to implement a classifier that predicts customer churn. 
 
-
-## Running Files
-How do you run your files? What should happen when you run your files?
-
+## Project Steps
+- To automatically generate the `requirements.txt` file, type `pipreqs --force` in cli.
+- To install the required python packages, type `pip install -r requirements.txt` in cli.
+- To lint a python script, type `black --line-length 79 PATH_TO_FILE` and `flake8 PATH_TO_FILE` in cli.
+- To run the machine learning pipeline, type `python churn_libaray.py` in cli.
+- To run the tests, type `pytest -vv` in cli.
+- To view the logs, type `cat logs/churn_library.log`
 
