@@ -1,4 +1,4 @@
-# Predict Customer Churn
+# Applying Clean Code Principles
 
 ## Overview
 In this project, I applied the clean code principles (modular, documented, and tested) to implement a classifier that predicts customer churn. 
